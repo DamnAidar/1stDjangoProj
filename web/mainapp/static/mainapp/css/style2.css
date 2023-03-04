@@ -1,0 +1,69 @@
+body {
+position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+}
+html {
+  background-image: url(https://sun9-8.userapi.com/impf/c857736/v857736433/983d2/FvYpWLSOtio.jpg?size=1920x1080&quality=96&sign=93ddca574c52fc8dd9d07a9bb198fa99&type=album);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header {
+        height: 300px;
+        text-align: center;
+        font-size: 14pt;
+        padding: 10px 0 10px 40px;
+        }
+
+#content {
+height: 320px;
+font-size: 12pt;
+}
+
+#footer {
+height: 200px;
+text-align: left;
+font-size: 14pt;
+}
+
+
+.underline-one {
+	color: #BC8F8F; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+
